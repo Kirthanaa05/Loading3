@@ -1,0 +1,30 @@
+html,body{
+  margin: 0;
+}
+
+:root{
+    --spinner:#e6e5e5;
+    --spinner-color: #ffde23;
+}
+
+.container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.load{
+  width: 100px;
+  height: 100px;
+  border: 1em solid var(--spinner);
+  border-radius: 50%;
+  border-top: 1em solid var(--spinner-color);
+  animation: load 1.5s linear infinite;
+}
+
+@keyframes load{
+  100%{
+    transform: rotate(360deg);
+  }
+}
